@@ -10,7 +10,7 @@ exports.create = (req, res) => {
         return;
     }
 
-    api_keys.create(resq.body.api_key).then(data => {
+    api_keys.create(res.body.api_key).then(data => {
         res.json({
             message: "Key Created",
             key: data
